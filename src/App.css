@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  border: none;
+  padding: 0;
+  font-family: Lato, sans-serif;
+  scroll-behavior: smooth;
+}
+/* .navbar-class {
+  justify-content: center;
+} */
+/* Custom CSS to center-align menu options */
+.navbar-center-spacer {
+  flex-grow: 0.5; /* Occupies available space, pushing menu to the center */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Media query for responsive behavior */
+@media (max-width: 767.98px) {
+  /* Adjust styles for mobile devices */
+  .navbar-center-spacer {
+    display: none; /* Hide the spacer on mobile devices */
   }
 }
+.nav-item {
+  margin-right: 5%;
+  width: 7rem;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logo {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  border-radius: 50%;
+}
+.navbar-light {
+  background-color: #cbd1ff !important;
+  border: none !important;
+  border-width: 0 !important;
+}
+.title {
+  /* font-family: cursive; */
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.nav-link {
+  font-weight: 600;
+}
+.about {
+  height: 35rem;
+  background-image: url("../public/hero1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-wrapper h4 {
+  /* font-family: cursive; */
+  font-size: 2rem;
+  /* font-weight: 700; */
+}
+.bg-white {
+  background-color: rgb(218 223 231 / 32%) !important;
+  width: 59%;
+}
+.separator {
+  /* background-color: red; */
+  height: 50px;
+}
+.service-container {
+  height: 400px;
+}
+@media (max-width: 576px) {
+  .service-container {
+    height: 156vh /* Adjust as needed */
+  }
+}
+.general-housekeeping {
+  background: url("../public/medium-shot-man-cleaning-indoors.jpg");
+  background-position: center;
+
+}
+.glass-cleaning{
+  background: url("../public/closeup-person-cleaning-windows-with-red-squeegee.jpg");
+  background-position: center;
+  
+}
+.pest-control{
+  background: url("../public/full-shot-man-holding-tank.jpg");
+}
+.services{
+  background-color: rgba(240, 248, 255, 0.367);
+  height: 400px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.service-info{
+  width: 80%;
+  height: 80%;
+  background-color: #cbd1ffb5;
+}
+.background-general-housekeeping{
+  height: 80%;
+  width: 80%;
+  background: rgb(175 90 0 / 43%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.background-glass-cleaning{
+  height: 80%;
+  width: 80%;
+  background: rgb(255 0 0 / 38%);
+}
+.background-pest-control{
+  height: 80%;
+  width: 80%;
+  background: rgb(0 10 144 / 43%);
+}
+
+.img{
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+  border: 2px solid black;
+  background-size: cover;
+  background-position: center;
+height: 300px;
 }
